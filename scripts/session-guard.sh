@@ -1825,8 +1825,15 @@ if [ "$CMD" = "open" ]; then
       if lease_valid "$STALE"; then
         echo "NOTE: у агента открыта долгая сессия $(basename "$STALE") (WP: $STALE_WP, возраст ${STALE_AGE}s) — права на коммит действуют, не трогаю" >&2
       else
+        STALE_HK=$(grep "^housekeeping: " "$STALE" | cut -d' ' -f2- || true)
         echo "WARNING: сессия $(basename "$STALE") (WP: $STALE_WP, возраст ${STALE_AGE}s) потеряла права на коммит." >&2
-        echo "         Закрой её (close --wp $STALE_WP) или продли: renew --wp $STALE_WP" >&2
+        if [ -n "$STALE_HK" ]; then
+          # issue #1506: a housekeeping semaphore has no wp, so "close --wp unknown"
+          # cannot close it; point at the command that does.
+          echo "         Закрой её: close --housekeeping $STALE_HK --agent $AGENT" >&2
+        else
+          echo "         Закрой её (close --wp $STALE_WP) или продли: renew --wp $STALE_WP" >&2
+        fi
       fi
     fi
   done < <(ls -t "$SESSION_DIR/${AGENT}"-*.open 2>/dev/null || true)

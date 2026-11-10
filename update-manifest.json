@@ -161,7 +161,7 @@
     },
     {
       "path": ".claude/hooks/rule-engine.sh",
-      "sha256": "383b5d69a4bdd99f5315709e0a6d25b7a53cbb4111c663500c057b8c2d50047d"
+      "sha256": "b86045faac1b0dac432102e3271eb753ce03adaaf1fd143cd379531e952a44f8"
     },
     {
       "path": ".claude/hooks/secret-bypass-analyzer.py",
@@ -505,7 +505,7 @@
     },
     {
       "path": ".claude/skills/day-close/SKILL.md",
-      "sha256": "903b45ca94b88fb3bca00e022844b9e76c1f4eab514587d5151fdd58163794e4"
+      "sha256": "639ba844ebf969b15f1223bbb0b5c7d3125738d5a9beb8e3dbbdbcbb240fa424"
     },
     {
       "path": ".claude/skills/day-close/day-close-details.md",
@@ -517,7 +517,7 @@
     },
     {
       "path": ".claude/skills/day-open/SKILL.md",
-      "sha256": "d92986a5c3a290c56deff3a4f70b8cc219c22255ffcf6b6b5d71722b0201817e"
+      "sha256": "34c25bc9b478e6c6c05e5749eee2e65da9131a2cd13900b908f0144969760685"
     },
     {
       "path": ".claude/skills/day-open/day-open-details.md",
@@ -941,7 +941,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "f4b5350226af584ae60d4ddc87bc411bb07da01460db2e6cc529cfa146791f8f"
+      "sha256": "e69dd2b50e2686434a1637232f054b505e0f66f67ebb990be95b0ca672548859"
     },
     {
       "path": "CLAUDE.md",
@@ -1565,7 +1565,7 @@
     },
     {
       "path": "guide-kit/structurer/test_quarantine.py",
-      "sha256": "61e8b572bbfb9886bb8269ce89317549798bc2bf2d191aa648352f5b8e8bbab3"
+      "sha256": "fa466636bd433a0abca4e8df17ae4bd028b6af45db814ae802c21dd8490add43"
     },
     {
       "path": "guide-kit/structurer/test_residency.py",
@@ -2877,7 +2877,7 @@
     },
     {
       "path": "scripts/session-guard.sh",
-      "sha256": "5dd94408b73e0b2466ec1d2f8cac756a0288813714404814e8c4ac2eb2dcbef4"
+      "sha256": "4a2a251e07169c418eba657611bcdeb36fb2229a3a5f886ec3a836938730ead0"
     },
     {
       "path": "scripts/session-manifest-write.sh",
@@ -3465,7 +3465,7 @@
     },
     {
       "path": "update.sh",
-      "sha256": "e13d9eb36b6d980d41565d4e236a7a2dd03d915f5e448d91ee23294bfbd3bfab"
+      "sha256": "653ebc2245dbdc6aba2bb5d5667628f7cce0f7b809fd8c1ca479d85238d307ec"
     }
   ],
   "excluded_paths": [

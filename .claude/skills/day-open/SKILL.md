@@ -125,6 +125,12 @@ fi
 **7b.** `bash .claude/scripts/load-extensions.sh day-open checks` → Exit 0: выполнить верификацию. БЛОКИРУЮЩЕЕ: commit запрещён до прохождения всех checks.
 **7c.** `git commit` + `git push`.
 **7d.** Compact dashboard → вывести в VS Code по шаблону «Шаблон compact dashboard» из `templates.md`.
+**7e.** Снять служебную отметку шага 0а (issue #1506): без этого она остаётся в `.iwe-runtime/sessions/` до следующего дня, и каждое `session-guard.sh open` предупреждает о сессии без прав на коммит. Закрывается только отметка `day-open` этого агента; её нет (шаг 0а не открывал, сессия уже была привязана к РП) — команда ничего не делает:
+```bash
+AGENT="${IWE_AGENT:-claude-code}"
+HK_SEM="${IWE_ROOT:-$HOME/IWE}/.iwe-runtime/sessions/${AGENT}-housekeeping-day-open.open"
+[ ! -f "$HK_SEM" ] || bash "${IWE_SCRIPTS:-$HOME/IWE/scripts}/session-guard.sh" close --housekeeping day-open --agent "$AGENT"
+```
 
 <!-- USER-SPACE -->
 <!-- /USER-SPACE -->
