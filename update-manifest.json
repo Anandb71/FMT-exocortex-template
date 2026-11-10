@@ -505,7 +505,7 @@
     },
     {
       "path": ".claude/skills/day-close/SKILL.md",
-      "sha256": "94abfca0b2b3099cac5664112e908f002d2c7ea8af0458536fabb9f8087d66d8"
+      "sha256": "bda852f86c80b8ec5318d075d79a273abba0c28bed3d9d303f964b3bd88cf012"
     },
     {
       "path": ".claude/skills/day-close/day-close-details.md",
@@ -517,7 +517,7 @@
     },
     {
       "path": ".claude/skills/day-open/SKILL.md",
-      "sha256": "f7dca73647f93d8daea7a6a52b8910d45689a6b2d7fcf997d021fd5497fd8524"
+      "sha256": "f61b95a60e12aabfb0128307c1b132e2927d55e2c0ca865b73f666e755aa96b6"
     },
     {
       "path": ".claude/skills/day-open/day-open-details.md",
@@ -941,7 +941,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "dbf5f59e4a205207059fb21e5854cdcf327e27858f0e6ccba93bdba8cd82a2cb"
+      "sha256": "6ac65edb6f7b7ab5c3dde8242b29bf13a16277f510a9c6740515ebde247a8fed"
     },
     {
       "path": "CLAUDE.md",
@@ -2877,7 +2877,7 @@
     },
     {
       "path": "scripts/session-guard.sh",
-      "sha256": "4a2a251e07169c418eba657611bcdeb36fb2229a3a5f886ec3a836938730ead0"
+      "sha256": "ae4ef07395a2450f2970b133995dd12ba6869b40a02ef7b9ccf08b2c043869e7"
     },
     {
       "path": "scripts/session-manifest-write.sh",
