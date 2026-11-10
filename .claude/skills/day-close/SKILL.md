@@ -165,11 +165,14 @@ jq -n \
 ```
 
 ### 10d. Снять служебную отметку шага 0г (issue #1506)
-После push шага 10b коммитов в этом протоколе больше нет. Отметка `day-close` этого агента, открытая на шаге 0г, иначе остаётся в `.iwe-runtime/sessions/`, и следующее `session-guard.sh open` предупреждает о сессии без прав на коммит. Её нет (шаг 0г не открывал) — команда ничего не делает:
+После push шага 10b коммитов в этом протоколе больше нет. Отметка `day-close` этого агента, открытая на шаге 0г, иначе остаётся в `.iwe-runtime/sessions/`, и следующее `session-guard.sh open` предупреждает о сессии без прав на коммит. Закрывается только отметка, записанная этим же разговором (строка `harness_session_id` совпадает), чтобы не снять отметку параллельной сессии того же агента. Нет своей отметки или нет номера разговора — команда ничего не делает:
 ```bash
 AGENT="${IWE_AGENT:-claude-code}"
+HARNESS_ID="${CLAUDE_CODE_SESSION_ID:-}"
 HK_SEM="${IWE_ROOT:-$HOME/IWE}/.iwe-runtime/sessions/${AGENT}-housekeeping-day-close.open"
-[ ! -f "$HK_SEM" ] || bash "${IWE_SCRIPTS:-$HOME/IWE/scripts}/session-guard.sh" close --housekeeping day-close --agent "$AGENT"
+if [ -n "$HARNESS_ID" ] && grep -qxF "harness_session_id: $HARNESS_ID" "$HK_SEM" 2>/dev/null; then
+  bash "${IWE_SCRIPTS:-$HOME/IWE/scripts}/session-guard.sh" close --housekeeping day-close --agent "$AGENT"
+fi
 ```
 
 ### 11. Верификация (Haiku R23)

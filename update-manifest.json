@@ -505,7 +505,7 @@
     },
     {
       "path": ".claude/skills/day-close/SKILL.md",
-      "sha256": "639ba844ebf969b15f1223bbb0b5c7d3125738d5a9beb8e3dbbdbcbb240fa424"
+      "sha256": "94abfca0b2b3099cac5664112e908f002d2c7ea8af0458536fabb9f8087d66d8"
     },
     {
       "path": ".claude/skills/day-close/day-close-details.md",
@@ -517,7 +517,7 @@
     },
     {
       "path": ".claude/skills/day-open/SKILL.md",
-      "sha256": "34c25bc9b478e6c6c05e5749eee2e65da9131a2cd13900b908f0144969760685"
+      "sha256": "f7dca73647f93d8daea7a6a52b8910d45689a6b2d7fcf997d021fd5497fd8524"
     },
     {
       "path": ".claude/skills/day-open/day-open-details.md",
@@ -941,7 +941,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "e69dd2b50e2686434a1637232f054b505e0f66f67ebb990be95b0ca672548859"
+      "sha256": "dbf5f59e4a205207059fb21e5854cdcf327e27858f0e6ccba93bdba8cd82a2cb"
     },
     {
       "path": "CLAUDE.md",
