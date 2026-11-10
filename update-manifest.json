@@ -913,7 +913,7 @@
     },
     {
       "path": ".github/workflows/validate-template.yml",
-      "sha256": "f7a12bf0d6421dc68a9b94d560cb4191f87f3c48f1d637a1652c721570c19e58"
+      "sha256": "4f5c8ae6f313dd801a5ddfab4d51e1611ed3a07d86fa209bb6518550f74cf7b8"
     },
     {
       "path": ".gitignore",
@@ -941,7 +941,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "6ac65edb6f7b7ab5c3dde8242b29bf13a16277f510a9c6740515ebde247a8fed"
+      "sha256": "74a8669125973e395a4c9ab0820c22bfe08d90fa46af40e549536f1267ad9d35"
     },
     {
       "path": "CLAUDE.md",
@@ -1033,7 +1033,7 @@
     },
     {
       "path": "docs/RELEASE-PROCESS.md",
-      "sha256": "c49d250278ecf3d1d550d2d058e026f87188553c7300cd5ad1be2fa5851924af"
+      "sha256": "064d282196b5c41603b8c929c46cb97f241b16b6bad40b568f588c22428c12b7"
     },
     {
       "path": "docs/RESIDENCY-GATE-USAGE.md",
@@ -2309,7 +2309,7 @@
     },
     {
       "path": "scripts/check-manifest-coverage.py",
-      "sha256": "cc6ca0a9404b5cd42c395812d39582e03fd58c263ffb42ed88877b21c48c8d56"
+      "sha256": "a31bd788c34859738d0a788f39656475cb347c8adb94e615ade189a7cbf2148d"
     },
     {
       "path": "scripts/check-open-sessions.sh",
@@ -2940,6 +2940,10 @@
       "sha256": "64546c07323752ce6092c0ed1095699cd1738dbe308dc4a6743b2dbdf4eb0d92"
     },
     {
+      "path": "scripts/tag-release-candidate.sh",
+      "sha256": "7e2d840eb4b39932d84be6888792400d6315442644633a2d31c78d628d7cc89b"
+    },
+    {
       "path": "scripts/test-route-task.sh",
       "sha256": "54a49e58e9405fb5a0127fbb454a6d8ac9612108aa558bc1747d20a7131cc5ea"
     },
@@ -3465,7 +3469,7 @@
     },
     {
       "path": "update.sh",
-      "sha256": "653ebc2245dbdc6aba2bb5d5667628f7cce0f7b809fd8c1ca479d85238d307ec"
+      "sha256": "b86a0924dc83dd266415ede98d44539b038ae8a1c4b7c640967c9fc63ca15736"
     }
   ],
   "excluded_paths": [
@@ -3727,6 +3731,7 @@
     "scripts/tests/test_skill_promote.py",
     "scripts/tests/test_sync_banner.py",
     "scripts/tests/test_sync_code_scan_quiet.sh",
+    "scripts/tests/test_tag_release_candidate.sh",
     "scripts/tests/test_template_hygiene_checks.sh",
     "scripts/tests/test_translate_delta.py",
     "scripts/tests/test_translate_parse.py",
